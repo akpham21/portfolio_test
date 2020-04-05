@@ -1,0 +1,555 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Overwrite border-radius in bootstrap since all buttons are more rounded
+.btn {
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+// Overwrite bootstrap container definition to attempt to make it pixel perfect
+.container {
+  width: 81.3%;
+}
+
+// Navbar section
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  // Left Side of Navbar (Logo with image, name, and title)
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__img {
+    background: grey;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-top: 6px;
+    margin-right: 0.25rem;
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: 800;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #6d6d6d;
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+
+  // Main Top Navigation, Right Side of Navbar
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 22px 0 10px 0;
+  }
+
+  &__nav-link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: auto 14px auto 14px;
+  }
+
+  &__nav-link--active {
+    border-bottom: 2px black solid;
+  }
+
+  &__nav-link:hover {
+    text-decoration: none;
+  }
+
+  &__button {
+    border: 2px solid black;
+    padding: 5px 22px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+  }
+}
+
+// Showcase section
+.showcase {
+  &__left {
+    margin-top: 4.25rem;
+  }
+  &__name {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 5px 0;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 0;
+  }
+
+  &__contact-list {
+    display: flex;
+    list-style: none;
+    margin-top: 1.25rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.25rem;
+    margin: 0 6px 14px 1px;
+  }
+
+  &__behance {
+    background: rgb(24, 111, 253);
+  }
+
+  &__dribbble {
+    background: rgb(232, 25, 105);
+  }
+
+  &__linkedin {
+    background: rgb(1, 124, 184);
+  }
+
+  &__facebook {
+    background: rgb(57, 86, 154);
+  }
+
+  &__instagram {
+    background: rgb(18, 88, 140);
+  }
+
+  &__twitter {
+    background: rgb(81, 175, 239);
+  }
+
+  &__button-hire {
+    font-size: 12px;
+    padding: 10px 36px;
+    margin-right: 10px;
+  }
+
+  &__button-hire:hover {
+    background: white;
+    color: black;
+  }
+
+  &__button-resume {
+    font-size: 12px;
+    padding: 10px 22px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+// Work Section
+.work {
+  // Work Navigation
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 22px;
+    padding-bottom: 6px;
+  }
+
+  &__nav-link {
+    color: #6d6d6d;
+    font-size: 9px;
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 10px;
+  }
+
+  &__nav-link:hover {
+    text-decoration: none;
+    color: grey;
+  }
+
+  // Column propertiees for the work cards
+  &__left-column {
+    padding-right: 0.5rem;
+  }
+
+  &__middle-column {
+    padding: 0 0.75rem;
+  }
+
+  &__right-column {
+    padding-left: 0.5rem;
+  }
+
+  // Work Card
+  &__card {
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__card-img {
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 228px;
+  }
+
+  &__card-body {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  &__card-category {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  &__card-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  // margin-bottom was being overwritten by reboot.scss so increase specificity to override that
+  &__card-title .work__card-project-title {
+    margin-bottom: 0;
+    color: black;
+  }
+
+  &__card-title .work__card-year {
+    margin-bottom: 0;
+  }
+
+  &__card-project-title:hover {
+    text-decoration: none;
+    color: grey;
+  }
+
+  // Work Button
+  &__button {
+    display: block;
+    margin: 0.25rem auto;
+  }
+}
+
+// About Me Section
+.about {
+  margin: 5.5rem 0;
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__left {
+    padding-top: 5px;
+    padding-right: 30px;
+  }
+
+  &__right {
+    padding: 2rem 0 0 0.75rem;
+  }
+
+  &__content {
+    padding-top: 30px;
+  }
+
+  &__about-me-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  &__who-am-i {
+    color: #dddddd;
+    font-size: 4.25rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 9px;
+    line-height: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  &__button-hire {
+    font-size: 12px;
+    padding: 10px 36px;
+    margin-right: 10px;
+  }
+
+  &__button-hire:hover {
+    background: white;
+    color: black;
+  }
+
+  &__button-resume {
+    font-size: 12px;
+    padding: 10px 22px;
+  }
+}
+
+// Testimonial Section
+.testimonial {
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 58px;
+
+  &__background {
+    position: relative;
+    background-image: url("/dist/img/testimonial_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    margin-top: 16px;
+  }
+
+  &__container {
+    width: 58%;
+    padding-top: 20px;
+  }
+
+  &__review {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding-top: 28px;
+  }
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    object-position: left top;
+    border: white 3px solid;
+    border-radius: 50%;
+    height: 78px;
+    width: 78px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 42px;
+    margin-bottom: 0;
+  }
+
+  &__company {
+    font-size: 10px;
+    font-style: italic;
+    color: #6d6d6d;
+    margin-bottom: 0;
+  }
+
+  &__stars {
+    font-size: 10px;
+    margin-top: 2px;
+  }
+}
+
+// Blog Section
+.blog {
+  padding-bottom: 3rem;
+
+  // Column properties for the Blog Cards
+  &__left-column {
+    padding-right: 0.5rem;
+  }
+  &__middle-column {
+    padding: 0 0.75rem;
+  }
+  &__right-column {
+    padding-left: 0.5rem;
+  }
+  &__card {
+    border: none;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  &__subtitle {
+    color: #6d6d6d;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+  &__card-img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 194px;
+  }
+
+  &__date-box {
+    position: absolute;
+    background: black;
+    color: white;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__date {
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__card-body {
+    padding: 1rem 0 0.25rem 0;
+  }
+
+  &__card-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+
+  &__card-category {
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+
+  &__card-content {
+    font-size: 9px;
+    line-height: 2;
+    margin-bottom: 1.75rem;
+  }
+
+  &__button-dark:hover {
+    background: white;
+    color: black;
+  }
+
+  &__more-posts {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #6d6d6d;
+    padding-top: 0.25rem;
+  }
+}
+
+// Footer Section
+.footer {
+  background: #2b2b2d;
+  color: #959597;
+  margin-top: 44px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 5px;
+  }
+
+  &__left {
+    display: flex;
+  }
+  &__copyright {
+    border-right: #959597 1px solid;
+    font-size: 10px;
+    font-weight: bold;
+    align-self: center;
+    padding-right: 0.75rem;
+    margin-bottom: 0;
+  }
+  &__contact-list {
+    display: flex;
+    list-style: none;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    padding-left: 0.75rem;
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  // Footer Navigation
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  &__nav-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__nav-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #959597;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 0.75rem;
+  }
+
+  &__nav-link:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__button {
+    background: #2b2b2d;
+    color: #959597;
+    border: #959597 solid 1px;
+    padding: 5px 16px;
+  }
+
+  &__button:hover {
+    background: white;
+    color: black;
+    border: black solid 1px;
+  }
+}
+
+// Import Media Queries
+@import "media";

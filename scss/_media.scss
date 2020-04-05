@@ -1,0 +1,146 @@
+// Breakpoint where the work section goes from 3 columns to 2
+@media (max-width: 992px) {
+  .navbar {
+    &__logo {
+      display: none;
+    }
+
+    &__nav-list {
+      margin: auto;
+    }
+  }
+  .showcase {
+    &__left {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    &__contact-list {
+      justify-content: center;
+    }
+
+    &__right {
+      justify-content: center;
+    }
+  }
+
+  .work {
+    &__left-column {
+      padding-right: 1rem;
+    }
+
+    &__middle-column {
+      padding: 0 1rem;
+    }
+
+    &__right-column {
+      padding-left: 1rem;
+    }
+  }
+
+  .about {
+    &__img {
+      display: none;
+    }
+  }
+
+  .testimonial {
+    &__background {
+      height: 16rem;
+    }
+
+    &__review {
+      position: absolute;
+      padding-top: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .blog {
+    &__card {
+      margin-bottom: 2rem;
+    }
+
+    &__left-column {
+      padding: 0;
+    }
+
+    &__middle-column {
+      padding: 0;
+    }
+
+    &__right-column {
+      padding: 0;
+    }
+
+    &__card-content {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// Tablets
+@media (max-width: 767px) {
+  .navbar {
+    &__nav-link {
+      margin: auto 4px auto 4px;
+    }
+  }
+  .footer {
+    &__container {
+      flex-direction: column;
+      flex-flow: column-reverse;
+      align-items: center;
+    }
+
+    &__nav-list {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+//Smartphones
+@media (max-width: 576px) {
+  .navbar {
+    &__container {
+      width: 100%;
+    }
+  }
+
+  .showcase {
+    &__button-hire {
+      padding: 10px 48px;
+      margin: 0.25rem 0;
+    }
+
+    &__button-resume {
+      margin: 0.25rem 0;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .about {
+    margin: 2rem 0;
+
+    &__who-am-i {
+      font-size: 2.75rem;
+    }
+  }
+  .testimonial {
+    padding-bottom: 2rem;
+
+    &__background {
+      height: 24rem;
+    }
+  }
+
+  .blog {
+    padding-bottom: 1rem;
+  }
+}
