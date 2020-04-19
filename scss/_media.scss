@@ -1,55 +1,65 @@
 // Breakpoint where the work section goes from 3 columns to 2
 @media (max-width: 992px) {
-  .navbar {
-    &__logo {
-      display: none;
-    }
+  .logo {
+    display: none;
+  }
 
-    &__nav-list {
+  .menu {
+    // menu__list
+    &__list {
       margin: auto;
     }
   }
   .showcase {
+    // showcase__left
     &__left {
       text-align: center;
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
 
+    // showcase__contact-list
     &__contact-list {
       justify-content: center;
     }
 
+    // showcase__right
     &__right {
       justify-content: center;
     }
   }
 
   .work {
+    // work__left-column
     &__left-column {
       padding-right: 1rem;
     }
 
+    // work__middle-column
     &__middle-column {
       padding: 0 1rem;
     }
 
+    // work__right-column
     &__right-column {
       padding-left: 1rem;
     }
   }
 
   .about {
+    // about__img
     &__img {
       display: none;
     }
   }
 
   .testimonial {
+    // testimonial__background
     &__background {
       height: 16rem;
     }
 
+    // testimonial__review
     &__review {
       position: absolute;
       padding-top: 0;
@@ -60,22 +70,27 @@
   }
 
   .blog {
+    // blog__card
     &__card {
       margin-bottom: 2rem;
     }
 
+    // blog__left-column
     &__left-column {
       padding: 0;
     }
 
+    // blog__middle-column
     &__middle-column {
       padding: 0;
     }
 
+    // blog__right-column
     &__right-column {
       padding: 0;
     }
 
+    // blog__card-content
     &__card-content {
       margin-bottom: 0.5rem;
     }
@@ -84,42 +99,50 @@
 
 // Tablets
 @media (max-width: 767px) {
-  .navbar {
-    &__nav-link {
+  .menu {
+    // menu__link
+    &__link {
       margin: auto 4px auto 4px;
     }
   }
+
   .footer {
-    &__container {
+    // footer-wrapper
+    &-wrapper {
       flex-direction: column;
       flex-flow: column-reverse;
       align-items: center;
     }
 
-    &__nav-list {
-      margin-bottom: 1rem;
+    // footer-content
+    &-content {
+      margin-top: 1rem;
     }
   }
 }
 
 //Smartphones
 @media (max-width: 576px) {
-  .navbar {
-    &__container {
+  .header {
+    // header-wrapper
+    &-wrapper {
       width: 100%;
     }
   }
 
   .showcase {
+    // showcase__button-hire
     &__button-hire {
       padding: 10px 48px;
       margin: 0.25rem 0;
     }
 
+    // showcase__button-resume
     &__button-resume {
       margin: 0.25rem 0;
     }
 
+    // showcase__img
     &__img {
       width: 100%;
     }
@@ -128,6 +151,7 @@
   .about {
     margin: 2rem 0;
 
+    // about__who-am-i
     &__who-am-i {
       font-size: 2.75rem;
     }
@@ -135,6 +159,7 @@
   .testimonial {
     padding-bottom: 2rem;
 
+    // testimonial__background
     &__background {
       height: 24rem;
     }

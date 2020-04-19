@@ -19,45 +19,46 @@
     <title>Portfolio | Lewis Nathaniel</title>
   </head>
   <body>
-    <!-- Start of Navigation -->
-    <nav class="navbar">
-      <div class="container navbar__container">
-        <!-- Start Navbar Left Side (Logo consisting of Image, Name, and Title)-->
-        <div class="navbar__logo">
-          <img src="img/avatar_img.jpg" alt="" class="navbar__img" />
-          <div class="navbar__name_and_title">
-            <h6 class="navbar__name">Lewis<br />Nathaniel</h6>
-            <p class="navbar__title">UI & UX Designer</p>
+    <!-- Start Header Section -->
+    <div class="header">
+      <div class="header-wrapper container">
+        <!-- Start logo block -->
+        <a class="link" href="index.html">
+          <div class="logo">
+            <img src="img/avatar_img.jpg" alt="" class="logo__img" />
+            <div class="logo__content">
+              <h6 class="logo__name">Lewis<br />Nathaniel</h6>
+              <p class="logo__title">UI & UX Designer</p>
+            </div>
           </div>
-        </div>
-        <!-- End Navbar Left Side -->
-        <!-- Start Navbar Right Side (Main Navigation) -->
-        <ul class="navbar__nav-list">
-          <li class="navbar__nav-item">
-            <a class="navbar__nav-link navbar__nav-link--active" href="#"
-              >WORK</a
-            >
+        </a>
+        <!-- End logo block -->
+
+        <!-- Start Menu -->
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#work">WORK</a>
           </li>
-          <li class="navbar__nav-item">
-            <a class="navbar__nav-link" href="#aboutMe">ABOUT ME</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#aboutMe">ABOUT ME</a>
           </li>
-          <li class="navbar__nav-item">
-            <a class="navbar__nav-link" href="#readMe">BLOG</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#blog">BLOG</a>
           </li>
-          <li class="navbar__nav-item">
-            <a class="navbar__nav-link" href="#">CONTACT</a>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">CONTACT</a>
           </li>
-          <li class="navbar__nav-item">
-            <button class="btn btn-outline-dark navbar__button">
+          <li class="menu__item">
+            <button class="menu__btn btn btn-outline-dark">
               HIRE ME
             </button>
           </li>
         </ul>
-        <!-- End Navbar Right Side -->
+        <!-- End Menu -->
       </div>
-      <!-- End Container -->
-    </nav>
-    <!-- End Navigation Section -->
+      <!-- End Wrapper -->
+    </div>
+    <!-- End Header -->
 
     <!-- Start Showcase Section -->
     <section class="showcase">
@@ -76,13 +77,13 @@
               <li class="showcase__icon showcase__dribbble">
                 <i class="fab fa-dribbble"></i>
               </li>
-              <li class="showcase__icon  showcase__linkedin">
+              <li class="showcase__icon showcase__linkedin">
                 <i class="fab fa-linkedin-in"></i>
               </li>
               <li class="showcase__icon showcase__facebook">
                 <i class="fab fa-facebook-f"></i>
               </li>
-              <li class="showcase__icon  showcase__instagram">
+              <li class="showcase__icon showcase__instagram">
                 <i class="fab fa-instagram"></i>
               </li>
               <li class="showcase__icon showcase__twitter">
@@ -627,63 +628,96 @@
 
     <!-- Start Footer Section -->
     <footer class="footer">
-      <div class="container footer__container">
-        <!-- Start Footer Left Side (Copyright and Social Media Icons) -->
-        <div class="footer__left">
-          <p class="footer__copyright">&copy; 2018 UI43 - Free Templates</p>
+      <div class="footer-wrapper container">
+        <!-- Start Footer Content (Copyright and Social Media Icons) -->
+        <div class="footer-content">
+          <p class="footer-content__copyright">
+            &copy; 2018 UI43 - Free Templates
+          </p>
           <!-- Start Social Media Icons List -->
-          <ul class="footer__contact-list">
-            <li class="footer__icon footer__behance">
+          <ul class="footer-content__social-media-list">
+            <li class="footer-content__icon">
               <i class="fab fa-behance"></i>
             </li>
-            <li class="footer__icon footer__dribbble">
+            <li class="footer-content__icon">
               <i class="fab fa-dribbble"></i>
             </li>
-            <li class="footer__icon  footer__linkedin">
+            <li class="footer-content__icon">
               <i class="fab fa-linkedin-in"></i>
             </li>
-            <li class="footer__icon footer__facebook">
+            <li class="footer-content__icon">
               <i class="fab fa-facebook-f"></i>
             </li>
-            <li class="footer__icon  footer__instagram">
+            <li class="footer-content__icon">
               <i class="fab fa-instagram"></i>
             </li>
-            <li class="footer__icon footer__twitter">
+            <li class="footer-content__icon">
               <i class="fab fa-twitter"></i>
             </li>
           </ul>
           <!-- End Social Media Icons List -->
         </div>
-        <!-- End Footer Left Side -->
+        <!-- End Footer Content -->
 
-        <!-- Start Footer Right Side (Navbar) -->
-        <div class="footer__right">
-          <!-- Start Navbar List -->
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Work</a>
+        <!-- Start Footer Menu -->
+        <div class="menu">
+          <!-- Start Menu List -->
+          <ul class="menu__list menu__list--footer">
+            <li class="menu__item">
+              <a class="menu__link menu__link--dark menu__link--footer" href="#"
+                >Work</a
+              >
             </li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#aboutMe">About Me</a>
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--dark menu__link--footer"
+                href="#aboutMe"
+                >About Me</a
+              >
             </li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#readMe">Blog</a>
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--dark menu__link--footer"
+                href="#readMe"
+                >Blog</a
+              >
             </li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">Contact</a>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dark menu__link--footer" href="#"
+                >Contact</a
+              >
             </li>
-            <li class="footer__nav-item">
-              <button class="btn btn-dark footer__button">
+            <li class="menu__item">
+              <button
+                class="menu__btn menu__btn--dark menu__btn--footer btn btn-dark"
+              >
                 HIRE ME
               </button>
             </li>
           </ul>
-          <!-- End Navbar List -->
+          <!-- End Menu List -->
         </div>
-        <!-- End Footer Right Side -->
+        <!-- End Menu> -->
       </div>
-      <!-- End Container -->
+      <!-- End Wrapper -->
     </footer>
     <!-- End Footer Section -->
   </body>
 </html>
+
+<script>
+  function updateActiveClass() {
+    const currentLocation = location.href;
+    console.log(currentLocation);
+    const menuItem = document.querySelectorAll(".navbar__nav-link");
+    const menuLength = menuItem.length;
+    for (let i = 0; i < menuLength; i++) {
+      if (menuItem[i].classList.contains("navbar__nav-link--active")) {
+        menuItem[i].classList.remove("navbar__nav-link--active");
+      }
+      if (menuItem[i].href === currentLocation) {
+        menuItem[i].classList.add("navbar__nav-link--active");
+      }
+    }
+  }
+</script>

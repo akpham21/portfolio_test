@@ -1,3 +1,7 @@
+@import "header";
+@import "navigation";
+@import "footer";
+
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +16,7 @@ body {
   font-size: 11px;
   font-weight: bold;
   border-radius: 30px;
+  text-transform: uppercase;
 }
 
 // Overwrite bootstrap container definition to attempt to make it pixel perfect
@@ -19,77 +24,15 @@ body {
   width: 81.3%;
 }
 
-// Navbar section
-.navbar {
-  padding-left: 0;
-  padding-right: 0;
+.uppercase {
+  text-transform: uppercase;
+}
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-  }
-  // Left Side of Navbar (Logo with image, name, and title)
-  &__logo {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  &__img {
-    background: grey;
-    border-radius: 50%;
-    object-fit: cover;
-    width: 2.75rem;
-    height: 2.75rem;
-    margin-top: 6px;
-    margin-right: 0.25rem;
-  }
-
-  &__name {
-    font-size: 12px;
-    font-weight: 800;
-    padding-top: 10px;
-    margin-bottom: 0;
-  }
-
-  &__title {
-    color: #6d6d6d;
-    font-size: 9px;
-    margin-bottom: 0;
-  }
-
-  // Main Top Navigation, Right Side of Navbar
-  &__nav-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 11px;
-    font-weight: bold;
-    margin: 22px 0 10px 0;
-  }
-
-  &__nav-link {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.link {
+  color: black;
+  &:hover {
+    color: lightgrey;
     text-decoration: none;
-    color: black;
-    margin: auto 14px auto 14px;
-  }
-
-  &__nav-link--active {
-    border-bottom: 2px black solid;
-  }
-
-  &__nav-link:hover {
-    text-decoration: none;
-  }
-
-  &__button {
-    border: 2px solid black;
-    padding: 5px 22px;
-    margin-left: 10px;
-    margin-bottom: 1px;
   }
 }
 
@@ -185,6 +128,8 @@ body {
   }
 
   &__nav-link {
+    @extend .link;
+
     color: #6d6d6d;
     font-size: 9px;
     font-weight: bold;
@@ -420,6 +365,7 @@ body {
   }
 
   &__date-box {
+    display: flex;
     position: absolute;
     background: black;
     color: white;
@@ -471,85 +417,57 @@ body {
   }
 }
 
-// Footer Section
-.footer {
-  background: #2b2b2d;
-  color: #959597;
-  margin-top: 44px;
+// Contact Page
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 
-  &__container {
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.form {
+  border: 1px lightgrey solid;
+  box-shadow: 0 1.5rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+  padding: 3rem 2rem;
+
+  // form__label
+  &__label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  // form__submit
+  &__submit {
     display: flex;
-    justify-content: space-between;
-    padding-top: 8px;
-    padding-bottom: 5px;
-  }
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
-  &__left {
-    display: flex;
-  }
-  &__copyright {
-    border-right: #959597 1px solid;
-    font-size: 10px;
-    font-weight: bold;
-    align-self: center;
-    padding-right: 0.75rem;
-    margin-bottom: 0;
-  }
-  &__contact-list {
-    display: flex;
-    list-style: none;
-    align-self: center;
-    margin-bottom: 0;
-  }
+    // form__submit--disabled
+    &--disabled {
+      cursor: default;
+      color: grey;
+    }
 
-  &__icon {
-    padding-left: 0.75rem;
+    // form__submit--active
+    &--active {
+      cursor: pointer;
+      color: black;
+    }
   }
+}
 
-  &__right {
-    display: flex;
-  }
-
-  // Footer Navigation
-  &__nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-bottom: 0;
-  }
-
-  &__nav-item {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__nav-link {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #959597;
-    font-size: 10px;
-    font-weight: bold;
-    margin-right: 0.75rem;
-  }
-
-  &__nav-link:hover {
-    color: white;
-    text-decoration: none;
-  }
-
-  &__button {
-    background: #2b2b2d;
-    color: #959597;
-    border: #959597 solid 1px;
-    padding: 5px 16px;
-  }
-
-  &__button:hover {
-    background: white;
-    color: black;
-    border: black solid 1px;
-  }
+.thank-you-msg {
+  display: none;
+  text-align: center;
 }
 
 // Import Media Queries

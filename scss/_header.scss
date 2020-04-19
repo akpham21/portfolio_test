@@ -1,0 +1,45 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+
+  // header-wrapper
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  // logo__img
+  &__img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-top: 6px;
+    margin-right: 0.25rem;
+  }
+
+  // logo__name
+  &__name {
+    font-size: 12px;
+    font-weight: 800;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  // logo__title
+  &__title {
+    color: #6d6d6d;
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+}
