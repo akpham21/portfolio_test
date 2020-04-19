@@ -451,14 +451,14 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
 
-    // form__submit--disabled
-    &--disabled {
+    // form__submit:disabled
+    &:disabled {
       cursor: default;
       color: grey;
     }
 
-    // form__submit--active
-    &--active {
+    // form__submit:active
+    &:active {
       cursor: pointer;
       color: black;
     }
