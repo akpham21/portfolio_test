@@ -444,6 +444,12 @@ body {
     text-transform: uppercase;
   }
 
+  &__input{
+    &--textarea{
+      resize: none;
+    }
+  }
+
   // form__submit
   &__submit {
     display: flex;
