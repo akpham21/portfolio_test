@@ -107,8 +107,8 @@
   }
 
   .footer {
-    // footer-wrapper
-    &-wrapper {
+    // footer-container
+    &-container {
       flex-direction: column;
       flex-flow: column-reverse;
       align-items: center;
@@ -124,8 +124,8 @@
 //Smartphones
 @media (max-width: 576px) {
   .header {
-    // header-wrapper
-    &-wrapper {
+    // header-container
+    &-container {
       width: 100%;
     }
   }

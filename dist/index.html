@@ -1,708 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Portfolio | Lewis Nathaniel</title>
-  </head>
-  <body>
-    <!-- Start Header Section -->
-    <div class="header">
-      <div class="header-wrapper container">
-        <!-- Start logo block -->
-        <a class="link" href="index.html">
-          <div class="logo">
-            <img src="img/avatar_img.jpg" alt="" class="logo__img" />
-            <div class="logo__content">
-              <h6 class="logo__name">Lewis<br />Nathaniel</h6>
-              <p class="logo__title">UI & UX Designer</p>
-            </div>
-          </div>
-        </a>
-        <!-- End logo block -->
 
-        <!-- Start Menu -->
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#work">WORK</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#aboutMe">ABOUT ME</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#blog">BLOG</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="contact.html">CONTACT</a>
-          </li>
-          <li class="menu__item">
-            <button class="menu__btn btn btn-outline-dark">
-              HIRE ME
-            </button>
-          </li>
-        </ul>
-        <!-- End Menu -->
-      </div>
-      <!-- End Wrapper -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Portfolio | Lewis Nathaniel</title>
+</head>
+
+<body>
+  <!-- Start Header Section -->
+  <div class="header">
+    <div class="header-container container">
+      <!-- Start logo block -->
+      <a class="link" href="index.html">
+        <div class="logo">
+          <img src="img/avatar_img.jpg" alt="" class="logo__img" />
+          <div class="logo__content">
+            <h6 class="logo__name">Lewis<br />Nathaniel</h6>
+            <p class="logo__title">UI & UX Designer</p>
+          </div>
+        </div>
+      </a>
+      <!-- End logo block -->
+
+      <!-- Start Menu -->
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link menu__link--active" href="#work">WORK</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#aboutMe">ABOUT ME</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#blog">BLOG</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contact.html">CONTACT</a>
+        </li>
+        <li class="menu__item">
+          <button class="menu__btn btn btn-outline-dark">
+            HIRE ME
+          </button>
+        </li>
+      </ul>
+      <!-- End Menu -->
     </div>
-    <!-- End Header -->
+    <!-- End Container -->
+  </div>
+  <!-- End Header -->
 
-    <!-- Start Showcase Section -->
-    <section class="showcase">
-      <div class="container showcase__container">
-        <div class="row">
-          <!-- Start Showcase Left Side (Intro, Social Media Contact, CTA) -->
-          <div class="col-lg showcase__left">
-            <h4 class="showcase__intro">Hello, I'm</h4>
-            <h2 class="showcase__name">Lewis Nathaniel</h2>
-            <h6 class="showcase__title">UI & UX Designer</h6>
-            <!-- Start list of Social Media icons -->
-            <ul class="showcase__contact-list">
-              <li class="showcase__icon showcase__behance">
-                <i class="fab fa-behance"></i>
-              </li>
-              <li class="showcase__icon showcase__dribbble">
-                <i class="fab fa-dribbble"></i>
-              </li>
-              <li class="showcase__icon showcase__linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </li>
-              <li class="showcase__icon showcase__facebook">
-                <i class="fab fa-facebook-f"></i>
-              </li>
-              <li class="showcase__icon showcase__instagram">
-                <i class="fab fa-instagram"></i>
-              </li>
-              <li class="showcase__icon showcase__twitter">
-                <i class="fab fa-twitter"></i>
-              </li>
-            </ul>
-            <!-- End List of Social Media Icons -->
-            <button
-              type="button"
-              class="btn btn-dark btn-lg showcase__button-hire"
-            >
-              HIRE ME
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-dark btn-lg showcase__button-resume"
-            >
-              SEE MY RESUME
-            </button>
-          </div>
-          <!-- End Showcase Left Side -->
-
-          <!-- Start Showcase Right Side (Single image) -->
-          <div class="col-lg showcase__right">
-            <img
-              src="img/showcase_img.png"
-              alt="showcase_img"
-              class="showcase__img"
-            />
-          </div>
-          <!-- End Showcase Right Side -->
-        </div>
-        <!-- End Row -->
-      </div>
-      <!-- End Container -->
-    </section>
-    <!-- End Showcase Section -->
-
-    <!-- Start Work Section -->
-    <section class="work" id="work">
-      <div class="container work__container">
-        <!-- Navigation for Work Section above Cards -->
-        <ul class="work__nav-list">
-          <li class="work__nav-item">
-            <a href="#" class="work__nav-link">All</a>
-          </li>
-          <li class="work__nav-item">
-            <a href="#" class="work__nav-link">App</a>
-          </li>
-          <li class="work__nav-item">
-            <a href="#" class="work__nav-link">Website</a>
-          </li>
-          <li class="work__nav-item">
-            <a href="#" class="work__nav-link">Interaction</a>
-          </li>
-        </ul>
-        <!-- End Navigation for Work Section -->
-
-        <!-- Start row for work cards, overflow to next row -->
-        <div class="row work__card-row">
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__left-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img1.jpg"
-                alt="img1"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__middle-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img2.jpg"
-                alt="img2"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__right-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img3.jpg"
-                alt="img3"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__left-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img4.jpg"
-                alt="img4"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__middle-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img5.jpg"
-                alt="img5"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__right-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img6.jpg"
-                alt="img6"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__left-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img7.jpg"
-                alt="img7"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__middle-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img8.jpg"
-                alt="img8"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-
-          <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
-          <div class="col-lg-4 col-md-6 work__right-column">
-            <!-- Start Card -->
-            <div class="card work__card">
-              <!-- Card Image Start -->
-              <img
-                class="card-img-top work__card-img"
-                src="img/img9.jpg"
-                alt="img9"
-              />
-              <!-- Card Image End -->
-              <!-- Start Card Body -->
-              <div class="card-body work__card-body">
-                <p class="work__card-category">CATEGORY</p>
-                <!-- Start Card Title and Date -->
-                <div class="work__card-title">
-                  <a href="#" class="work__card-project-title stretched-link"
-                    >PROJECT TITLE</a
-                  >
-                  <p class="work__card-year">2018</p>
-                </div>
-                <!-- End Card Title and Date-->
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Card -->
-          </div>
-          <!-- End Column -->
-        </div>
-        <!-- End Row -->
-
-        <button class="btn btn-outline-dark work__button">
-          LOAD MORE WORK
-        </button>
-      </div>
-      <!-- End Container -->
-    </section>
-    <!-- End Work Section -->
-
-    <!-- Start About Me Section -->
-    <section class="about" id="aboutMe">
-      <div class="container about__container">
-        <div class="row">
-          <!-- Start About Me Left Side (Single Image) -->
-          <div class="col-lg-6 about__left">
-            <img src="img/aboutme_img1.png" alt="" class="about__img" />
-          </div>
-          <!-- End About Me Left Side -->
-          <!-- Start About Me Right Side (Description, CTA) -->
-          <div class="col-lg-5 about__right">
-            <h3 class="about__about-me-title">ABOUT ME</h3>
-            <h2 class="about__who-am-i">WHO AM I</h2>
-            <p class="about__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-              earum esse eius illo voluptates accusamus magni et suscipit
-              ducimus reprehenderit alias nesciunt, eveniet vel, ipsum maxime
-              harum tenetur fuga optio officiis distinctio dolores? Fugit quas
-              minima obcaecati nulla deserunt debitis dicta ab quidem ipsum
-              blanditiis ratione vitae, consequuntur eaque perspiciatis, dolore
-              culpa sed officiis sapiente? Nostrum labore iure architecto magni
-              nesciunt quisquam eligendi cumque deleniti odit pariatur, tenetur
-              perspiciatis, quos corporis voluptas, quas provident perferendis
-              eum et sunt. Ipsam fuga molestias illum inventore, eaque, magnam
-              laboriosam reprehenderit at repudiandae, asperiores amet vitae
-              quae commodi! Earum asperiores consectetur soluta fuga recusandae
-              cumque qui aliquid perferendis reiciendis nihil? Fugiat dolores
-              quod corporis?
-            </p>
-            <button
-              type="button"
-              class="btn btn-dark btn-lg about__button-hire"
-            >
-              HIRE ME
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-dark btn-lg about__button-resume"
-            >
-              SEE MY RESUME
-            </button>
-          </div>
-          <!-- End About Me Right Side -->
-        </div>
-        <!-- End Row -->
-      </div>
-      <!-- End Container -->
-    </section>
-    <!-- End About Me Section -->
-
-    <!-- Start Testimonial Section -->
-    <section class="testimonial">
-      <!-- Testimonial Background is outside of bootstrap container, make this background position relative -->
-      <div class="testimonial__background">
-        <!-- Start Testimonial Container that contains the review -->
-        <div class="container testimonial__container">
-          <p class="testimonial__review">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            doloribus harum impedit, ipsa odit ullam sapiente reprehenderit non
-            possimus. Accusamus asperiores quae dignissimos quod minima non
-            repudiandae praesentium et, corrupti, tempora obcaecati
-            necessitatibus magni quam ut dolore adipisci sed molestiae saepe
-            dicta.
-          </p>
-        </div>
-        <!-- End Testimonial Container -->
-        <!-- Testimonial Avatar to be centered on bottom of background, use position absolute -->
-        <img
-          src="img/testimonial_img.jpg"
-          alt="testimonial_img"
-          class="testimonial__img"
-        />
-      </div>
-      <!-- End Testimonial Background -->
-      <!-- Start Testimonial Name, Company, and Rating -->
-      <p class="testimonial__name">Edward M. Brooks</p>
-      <p class="testimonial__company">Marketing House</p>
-      <p class="testimonial__stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half"></i>
-      </p>
-      <!-- End Testimonial Name, Company, and Rating -->
-    </section>
-    <!-- End Testimonial Section -->
-
-    <!-- Start Blog Section -->
-    <section class="blog" id="blog">
-      <div class="container blog__container">
-        <!-- Start Blog Title  -->
-        <h3 class="blog__title">READ ME</h3>
-        <p class="blog__subtitle">Sometimes i write something smart</p>
-        <!-- End Blog Title -->
-        <div class="row blog__card-row">
-          <!-- Start Blog Column (Display 3 across on large screens, 1 across for all other screens) -->
-          <div class="col-lg-4 blog__left-column">
-            <!-- Start Blog Card -->
-            <div class="card blog__card">
-              <!-- Start Card Image and Date Block -->
-              <img
-                class="card-img-top blog__card-img"
-                src="img/blog_img1.png"
-                alt="img1"
-              />
-              <div class="blog__date-box">
-                <p class="blog__date">10<br />june</p>
-              </div>
-              <!-- End Card Image and Date Block -->
-              <!-- Start Card Body -->
-              <div class="card-body blog__card-body">
-                <h5 class="blog__card-title">
-                  TEN THE BEST APP IN 2017
-                </h5>
-                <p class="blog__card-category">CATEGORY</p>
-                <p class="blog__card-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Odit, culpa consectetur dicta voluptate facilis autem ex
-                  dolores, amet itaque nemo necessitatibus optio minima hic,
-                  animi excepturi voluptatem corporis labore! Consequuntur!
-                </p>
-                <button class="btn btn-outline-dark blog__button">
-                  READ MORE
-                </button>
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Blog Card -->
-          </div>
-          <!-- End Blog Column -->
-
-          <!-- Start Blog Column (Display 3 across on large screens, 1 across for all other screens) -->
-          <div class="col-lg-4 blog__middle-column">
-            <!-- Start Blog Card -->
-            <div class="card blog__card">
-              <!-- Start Card Image and Date Block -->
-              <img
-                class="card-img-top blog__card-img"
-                src="img/blog_img2.jpg"
-                alt="img2"
-              />
-              <div class="blog__date-box">
-                <p class="blog__date">15<br />june</p>
-              </div>
-              <!-- End Card Image and Date Block -->
-              <!-- Start Card Body -->
-              <div class="card-body blog__card-body">
-                <h5 class="blog__card-title">
-                  WEBSITE INSPIRATION
-                </h5>
-                <p class="blog__card-category">CATEGORY</p>
-                <p class="blog__card-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Odit, culpa consectetur dicta voluptate facilis autem ex
-                  dolores, amet itaque nemo necessitatibus optio minima hic,
-                  animi excepturi voluptatem corporis labore! Consequuntur!
-                </p>
-                <button class="btn btn-dark blog__button-dark">
-                  READ MORE
-                </button>
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Blog Card -->
-          </div>
-          <!-- End Blog Column -->
-
-          <!-- Start Blog Column (Display 3 across on large screens, 1 across for all other screens) -->
-          <div class="col-lg-4 blog__right-column">
-            <!-- Start Blog Card -->
-            <div class="card blog__card">
-              <!-- Start Card Image and Date Block -->
-              <img
-                class="card-img-top blog__card-img"
-                src="img/blog_img3.jpg"
-                alt="img3"
-              />
-              <div class="blog__date-box">
-                <p class="blog__date">20<br />june</p>
-              </div>
-              <!-- End Card Image and Date Block -->
-              <!-- Start Card Body -->
-              <div class="card-body blog__card-body">
-                <h5 class="blog__card-title">
-                  CHANGES IN SOCIAL MEDIA
-                </h5>
-                <p class="blog__card-category">CATEGORY</p>
-                <p class="blog__card-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Odit, culpa consectetur dicta voluptate facilis autem ex
-                  dolores, amet itaque nemo necessitatibus optio minima hic,
-                  animi excepturi voluptatem corporis labore! Consequuntur!
-                </p>
-                <button class="btn btn-outline-dark blog__button">
-                  READ MORE
-                </button>
-              </div>
-              <!-- End Card Body -->
-            </div>
-            <!-- End Blog Card -->
-          </div>
-          <!-- End Blog Column -->
-        </div>
-        <!-- End Row -->
-        <a href="#" class="blog__more-posts">See more posts</a>
-      </div>
-      <!-- End Container -->
-    </section>
-    <!-- End Blog Section -->
-
-    <!-- Start Footer Section -->
-    <footer class="footer">
-      <div class="footer-wrapper container">
-        <!-- Start Footer Content (Copyright and Social Media Icons) -->
-        <div class="footer-content">
-          <p class="footer-content__copyright">
-            &copy; 2018 UI43 - Free Templates
-          </p>
-          <!-- Start Social Media Icons List -->
-          <ul class="footer-content__social-media-list">
-            <li class="footer-content__icon">
+  <!-- Start Showcase Section -->
+  <section class="showcase">
+    <div class="container showcase__container">
+      <div class="row">
+        <!-- Start Showcase Left Side (Intro, Social Media Contact, CTA) -->
+        <div class="col-lg showcase__left">
+          <h4 class="showcase__intro">Hello, I'm</h4>
+          <h2 class="showcase__name">Lewis Nathaniel</h2>
+          <h6 class="showcase__title">UI & UX Designer</h6>
+          <!-- Start list of Social Media icons -->
+          <ul class="showcase__contact-list">
+            <li class="showcase__icon showcase__behance">
               <i class="fab fa-behance"></i>
             </li>
-            <li class="footer-content__icon">
+            <li class="showcase__icon showcase__dribbble">
               <i class="fab fa-dribbble"></i>
             </li>
-            <li class="footer-content__icon">
+            <li class="showcase__icon showcase__linkedin">
               <i class="fab fa-linkedin-in"></i>
             </li>
-            <li class="footer-content__icon">
+            <li class="showcase__icon showcase__facebook">
               <i class="fab fa-facebook-f"></i>
             </li>
-            <li class="footer-content__icon">
+            <li class="showcase__icon showcase__instagram">
               <i class="fab fa-instagram"></i>
             </li>
-            <li class="footer-content__icon">
+            <li class="showcase__icon showcase__twitter">
               <i class="fab fa-twitter"></i>
             </li>
           </ul>
-          <!-- End Social Media Icons List -->
+          <!-- End List of Social Media Icons -->
+          <button type="button" class="btn btn-dark btn-lg showcase__button-hire">
+            HIRE ME
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-lg showcase__button-resume">
+            SEE MY RESUME
+          </button>
         </div>
-        <!-- End Footer Content -->
+        <!-- End Showcase Left Side -->
 
-        <!-- Start Footer Menu -->
-        <div class="menu">
-          <!-- Start Menu List -->
-          <ul class="menu__list menu__list--footer">
-            <li class="menu__item">
-              <a class="menu__link menu__link--dark menu__link--footer" href="#"
-                >Work</a
-              >
-            </li>
-            <li class="menu__item">
-              <a
-                class="menu__link menu__link--dark menu__link--footer"
-                href="#aboutMe"
-                >About Me</a
-              >
-            </li>
-            <li class="menu__item">
-              <a
-                class="menu__link menu__link--dark menu__link--footer"
-                href="#readMe"
-                >Blog</a
-              >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu__link--dark menu__link--footer" href="#"
-                >Contact</a
-              >
-            </li>
-            <li class="menu__item">
-              <button
-                class="menu__btn menu__btn--dark menu__btn--footer btn btn-dark"
-              >
-                HIRE ME
-              </button>
-            </li>
-          </ul>
-          <!-- End Menu List -->
+        <!-- Start Showcase Right Side (Single image) -->
+        <div class="col-lg showcase__right">
+          <img src="img/showcase_img.png" alt="showcase_img" class="showcase__img" />
         </div>
-        <!-- End Menu> -->
+        <!-- End Showcase Right Side -->
       </div>
-      <!-- End Wrapper -->
-    </footer>
-    <!-- End Footer Section -->
-  </body>
+      <!-- End Row -->
+    </div>
+    <!-- End Container -->
+  </section>
+  <!-- End Showcase Section -->
+
+  <!-- Start Work Section -->
+  <section class="work" id="work">
+    <div class="container work__container">
+      <!-- Navigation for Work Section above Cards -->
+      <ul class="work__nav-list">
+        <li class="work__nav-item">
+          <a href="#" class="work__nav-link">All</a>
+        </li>
+        <li class="work__nav-item">
+          <a href="#" class="work__nav-link">App</a>
+        </li>
+        <li class="work__nav-item">
+          <a href="#" class="work__nav-link">Website</a>
+        </li>
+        <li class="work__nav-item">
+          <a href="#" class="work__nav-link">Interaction</a>
+        </li>
+      </ul>
+      <!-- End Navigation for Work Section -->
+
+      <!-- Start row for work cards, overflow to next row -->
+      <div class="row work__card-row">
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__left-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img1.jpg" alt="img1" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__middle-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img2.jpg" alt="img2" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__right-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img3.jpg" alt="img3" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__left-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img4.jpg" alt="img4" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__middle-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img5.jpg" alt="img5" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__right-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img6.jpg" alt="img6" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__left-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img7.jpg" alt="img7" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__middle-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img8.jpg" alt="img8" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Start Column (Display 3 across on large screens, 2 on tablet, 1 on smartphones) -->
+        <div class="col-lg-4 col-md-6 work__right-column">
+          <!-- Start Card -->
+          <div class="card work__card">
+            <!-- Card Image Start -->
+            <img class="card-img-top work__card-img" src="img/img9.jpg" alt="img9" />
+            <!-- Card Image End -->
+            <!-- Start Card Body -->
+            <div class="card-body work__card-body">
+              <p class="work__card-category">CATEGORY</p>
+              <!-- Start Card Title and Date -->
+              <div class="work__card-title">
+                <a href="#" class="work__card-project-title stretched-link">PROJECT TITLE</a>
+                <p class="work__card-year">2018</p>
+              </div>
+              <!-- End Card Title and Date-->
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Column -->
+      </div>
+      <!-- End Row -->
+
+      <button class="btn btn-outline-dark work__button">
+        LOAD MORE WORK
+      </button>
+    </div>
+    <!-- End Container -->
+  </section>
+  <!-- End Work Section -->
+
+  <!-- Start About Me Section -->
+  <section class="about" id="aboutMe">
+    <div class="container about__container">
+      <div class="row">
+        <!-- Start About Me Left Side (Single Image) -->
+        <div class="col-lg-6 about__left">
+          <img src="img/aboutme_img1.png" alt="" class="about__img" />
+        </div>
+        <!-- End About Me Left Side -->
+        <!-- Start About Me Right Side (Description, CTA) -->
+        <div class="col-lg-5 about__right">
+          <h3 class="about__about-me-title">ABOUT ME</h3>
+          <h2 class="about__who-am-i">WHO AM I</h2>
+          <p class="about__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+            earum esse eius illo voluptates accusamus magni et suscipit
+            ducimus reprehenderit alias nesciunt, eveniet vel, ipsum maxime
+            harum tenetur fuga optio officiis distinctio dolores? Fugit quas
+            minima obcaecati nulla deserunt debitis dicta ab quidem ipsum
+            blanditiis ratione vitae, consequuntur eaque perspiciatis, dolore
+            culpa sed officiis sapiente? Nostrum labore iure architecto magni
+            nesciunt quisquam eligendi cumque deleniti odit pariatur, tenetur
+            perspiciatis, quos corporis voluptas, quas provident perferendis
+            eum et sunt. Ipsam fuga molestias illum inventore, eaque, magnam
+            laboriosam reprehenderit at repudiandae, asperiores amet vitae
+            quae commodi! Earum asperiores consectetur soluta fuga recusandae
+            cumque qui aliquid perferendis reiciendis nihil? Fugiat dolores
+            quod corporis?
+          </p>
+          <button type="button" class="btn btn-dark btn-lg about__button-hire">
+            HIRE ME
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-lg about__button-resume">
+            SEE MY RESUME
+          </button>
+        </div>
+        <!-- End About Me Right Side -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Container -->
+  </section>
+  <!-- End About Me Section -->
+
+  <!-- Start Testimonial Section -->
+  <section class="testimonial">
+    <!-- Testimonial Background is outside of bootstrap container, make this background position relative -->
+    <div class="testimonial__background">
+      <!-- Start Testimonial Container that contains the review -->
+      <div class="container testimonial__container">
+        <p class="testimonial__review">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          doloribus harum impedit, ipsa odit ullam sapiente reprehenderit non
+          possimus. Accusamus asperiores quae dignissimos quod minima non
+          repudiandae praesentium et, corrupti, tempora obcaecati
+          necessitatibus magni quam ut dolore adipisci sed molestiae saepe
+          dicta.
+        </p>
+      </div>
+      <!-- End Testimonial Container -->
+      <!-- Testimonial Avatar to be centered on bottom of background, use position absolute -->
+      <img src="img/testimonial_img.jpg" alt="testimonial_img" class="testimonial__img" />
+    </div>
+    <!-- End Testimonial Background -->
+    <!-- Start Testimonial Name, Company, and Rating -->
+    <p class="testimonial__name">Edward M. Brooks</p>
+    <p class="testimonial__company">Marketing House</p>
+    <p class="testimonial__stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>
+    </p>
+    <!-- End Testimonial Name, Company, and Rating -->
+  </section>
+  <!-- End Testimonial Section -->
+
+  <!-- Start Blog Section -->
+  <section class="blog" id="blog">
+    <div class="container blog__container">
+      <!-- Start Blog Title  -->
+      <h3 class="blog__title">READ ME</h3>
+      <p class="blog__subtitle">Sometimes i write something smart</p>
+      <!-- End Blog Title -->
+      <div class="row blog__card-row">
+        <!-- Start Blog Column (Display 3 across on large screens, 1 across for all other screens) -->
+        <div class="col-lg-4 blog__left-column">
+          <!-- Start Blog Card -->
+          <div class="card blog__card">
+            <!-- Start Card Image and Date Block -->
+            <img class="card-img-top blog__card-img" src="img/blog_img1.png" alt="img1" />
+            <div class="blog__date-box">
+              <p class="blog__date">10<br />june</p>
+            </div>
+            <!-- End Card Image and Date Block -->
+            <!-- Start Card Body -->
+            <div class="card-body blog__card-body">
+              <h5 class="blog__card-title">
+                TEN THE BEST APP IN 2017
+              </h5>
+              <p class="blog__card-category">CATEGORY</p>
+              <p class="blog__card-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Odit, culpa consectetur dicta voluptate facilis autem ex
+                dolores, amet itaque nemo necessitatibus optio minima hic,
+                animi excepturi voluptatem corporis labore! Consequuntur!
+              </p>
+              <button class="btn btn-outline-dark blog__button">
+                READ MORE
+              </button>
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Blog Card -->
+        </div>
+        <!-- End Blog Column -->
+
+        <!-- Start Blog Column (Display 3 across on large screens, 1 across for all other screens) -->
+        <div class="col-lg-4 blog__middle-column">
+          <!-- Start Blog Card -->
+          <div class="card blog__card">
+            <!-- Start Card Image and Date Block -->
+            <img class="card-img-top blog__card-img" src="img/blog_img2.jpg" alt="img2" />
+            <div class="blog__date-box">
+              <p class="blog__date">15<br />june</p>
+            </div>
+            <!-- End Card Image and Date Block -->
+            <!-- Start Card Body -->
+            <div class="card-body blog__card-body">
+              <h5 class="blog__card-title">
+                WEBSITE INSPIRATION
+              </h5>
+              <p class="blog__card-category">CATEGORY</p>
+              <p class="blog__card-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Odit, culpa consectetur dicta voluptate facilis autem ex
+                dolores, amet itaque nemo necessitatibus optio minima hic,
+                animi excepturi voluptatem corporis labore! Consequuntur!
+              </p>
+              <button class="btn btn-dark blog__button-dark">
+                READ MORE
+              </button>
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Blog Card -->
+        </div>
+        <!-- End Blog Column -->
+
+        <!-- Start Blog Column (Display 3 across on large screens, 1 across for all other screens) -->
+        <div class="col-lg-4 blog__right-column">
+          <!-- Start Blog Card -->
+          <div class="card blog__card">
+            <!-- Start Card Image and Date Block -->
+            <img class="card-img-top blog__card-img" src="img/blog_img3.jpg" alt="img3" />
+            <div class="blog__date-box">
+              <p class="blog__date">20<br />june</p>
+            </div>
+            <!-- End Card Image and Date Block -->
+            <!-- Start Card Body -->
+            <div class="card-body blog__card-body">
+              <h5 class="blog__card-title">
+                CHANGES IN SOCIAL MEDIA
+              </h5>
+              <p class="blog__card-category">CATEGORY</p>
+              <p class="blog__card-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Odit, culpa consectetur dicta voluptate facilis autem ex
+                dolores, amet itaque nemo necessitatibus optio minima hic,
+                animi excepturi voluptatem corporis labore! Consequuntur!
+              </p>
+              <button class="btn btn-outline-dark blog__button">
+                READ MORE
+              </button>
+            </div>
+            <!-- End Card Body -->
+          </div>
+          <!-- End Blog Card -->
+        </div>
+        <!-- End Blog Column -->
+      </div>
+      <!-- End Row -->
+      <a href="#" class="blog__more-posts">See more posts</a>
+    </div>
+    <!-- End Container -->
+  </section>
+  <!-- End Blog Section -->
+
+  <!-- Start Footer Section -->
+  <footer class="footer">
+    <div class="footer-container container">
+      <!-- Start Footer Content (Copyright and Social Media Icons) -->
+      <div class="footer-content">
+        <p class="footer-content__copyright">
+          &copy; 2018 UI43 - Free Templates
+        </p>
+        <!-- Start Social Media Icons List -->
+        <ul class="footer-content__social-media-list">
+          <li class="footer-content__icon">
+            <i class="fab fa-behance"></i>
+          </li>
+          <li class="footer-content__icon">
+            <i class="fab fa-dribbble"></i>
+          </li>
+          <li class="footer-content__icon">
+            <i class="fab fa-linkedin-in"></i>
+          </li>
+          <li class="footer-content__icon">
+            <i class="fab fa-facebook-f"></i>
+          </li>
+          <li class="footer-content__icon">
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li class="footer-content__icon">
+            <i class="fab fa-twitter"></i>
+          </li>
+        </ul>
+        <!-- End Social Media Icons List -->
+      </div>
+      <!-- End Footer Content -->
+
+      <!-- Start Footer Menu -->
+      <div class="menu">
+        <!-- Start Menu List -->
+        <ul class="menu__list menu__list--footer">
+          <li class="menu__item">
+            <a class="menu__link menu__link--dark menu__link--footer" href="#work">Work</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dark menu__link--footer" href="#aboutMe">About Me</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dark menu__link--footer" href="#blog">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dark menu__link--footer" href="contact.html">Contact</a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn menu__btn--dark menu__btn--footer btn btn-dark">
+              HIRE ME
+            </button>
+          </li>
+        </ul>
+        <!-- End Menu List -->
+      </div>
+      <!-- End Menu> -->
+    </div>
+    <!-- End Container -->
+  </footer>
+  <!-- End Footer Section -->
+</body>
+
 </html>
 
 <script>

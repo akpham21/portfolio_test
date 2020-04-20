@@ -1,215 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Contact Me | Lewis Nathaniel</title>
-  </head>
-  <body>
-    <div class="contact-wrapper">
-      <!-- Start Header Section -->
-      <div class="header">
-        <div class="header-wrapper container">
-          <!-- Start logo block -->
-          <a class="link" href="index.html">
-            <div class="logo">
-              <img src="img/avatar_img.jpg" alt="" class="logo__img" />
-              <div class="logo__content">
-                <h6 class="logo__name">Lewis<br />Nathaniel</h6>
-                <p class="logo__title">UI & UX Designer</p>
-              </div>
-            </div>
-          </a>
-          <!-- End logo block -->
 
-          <!-- Start Menu -->
-          <ul class="menu__list">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Contact Me | Lewis Nathaniel</title>
+</head>
+
+<body>
+  <!-- Start Contact Wrapper that wraps the whole page (this is to make the footer sticky)-->
+  <div class="contact-wrapper">
+
+    <!-- Start Header Section -->
+    <div class="header">
+      <div class="header-container container">
+
+        <!-- Start logo block -->
+        <a class="link" href="index.html">
+          <div class="logo">
+            <img src="img/avatar_img.jpg" alt="" class="logo__img" />
+            <div class="logo__content">
+              <h6 class="logo__name">Lewis<br />Nathaniel</h6>
+              <p class="logo__title">UI & UX Designer</p>
+            </div>
+          </div>
+        </a>
+        <!-- End logo block -->
+
+        <!-- Start Menu -->
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#work">WORK</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#aboutMe">ABOUT ME</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#blog">BLOG</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="contact.html">CONTACT</a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn btn btn-outline-dark">
+              HIRE ME
+            </button>
+          </li>
+        </ul>
+        <!-- End Menu -->
+      </div>
+      <!-- End Container -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Main Contact Form Div -->
+    <div class="form-container container">
+
+      <!-- Start Form (calls thankYouMsg function onsubmit)-->
+      <form onsubmit="thankYouMsg(event.preventDefault())">
+
+        <!-- Start Thank You Message (Hidden by default) -->
+        <div id="submitSuccess" class="thank-you-msg">
+          <h1 class="uppercase">Thank You!</h1>
+          <p class="uppercase">Your submission has been sent!</p>
+        </div>
+        <!-- End Thank You Message -->
+
+        <!-- Start Main Contact Form -->
+        <div id="contactForm" class="form">
+          <!-- First and Last Name -->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label class="form__label" for="firstName">First Name</label>
+              <input type="text" id="firstName" class="form__input form-control" required />
+            </div>
+            <div class="form-group col-md-6">
+              <label class="form__label" for="lastName">Last Name</label>
+              <input type="text" id="lastName" class="form__input form-control" required />
+            </div>
+          </div>
+          <!-- End First and Last Name -->
+
+          <!-- Email -->
+          <div class="form-group">
+            <label class="form__label" for="email">E-mail</label>
+            <input type="email" id="email" class="form__input form-control" required />
+          </div>
+          <!-- End Email -->
+
+          <!-- Comments Text Area -->
+          <div class="form-group">
+            <label class="form__label" for="comments">Comments</label>
+            <textarea name="comments" id="comments" class="form__input form-control" rows="10"></textarea>
+          </div>
+          <!-- End Comments Text Area -->
+
+          <!-- Submit Button -->
+          <button type="submit" id="submitBtn" class="form__submit btn btn-outline-dark" disabled>
+            Submit
+          </button>
+          <!-- End Submit Button -->
+        </div>
+        <!-- End Main Contact Form Div -->
+      </form>
+      <!-- End Form -->
+    </div>
+    <!-- End Container -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <div class="footer-container container">
+
+        <!-- Start Footer Content (Copyright and Social Media Icons) -->
+        <div class="footer-content">
+          <p class="footer-content__copyright">
+            &copy; 2018 UI43 - Free Templates
+          </p>
+
+          <!-- Start Social Media Icons List -->
+          <ul class="footer-content__social-media-list">
+            <li class="footer-content__icon">
+              <i class="fab fa-behance"></i>
+            </li>
+            <li class="footer-content__icon">
+              <i class="fab fa-dribbble"></i>
+            </li>
+            <li class="footer-content__icon">
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+            <li class="footer-content__icon">
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li class="footer-content__icon">
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li class="footer-content__icon">
+              <i class="fab fa-twitter"></i>
+            </li>
+          </ul>
+          <!-- End Social Media Icons List -->
+        </div>
+        <!-- End Footer Content -->
+
+        <!-- Start Footer Menu -->
+        <div class="menu">
+          <!-- Start Menu List -->
+          <ul class="menu__list menu__list--footer">
             <li class="menu__item">
-              <a class="menu__link" href="index.html#work">WORK</a>
+              <a class="menu__link menu__link--dark menu__link--footer" href="index.html#work">Work</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="index.html#aboutMe">ABOUT ME</a>
+              <a class="menu__link menu__link--dark menu__link--footer" href="index.html#aboutMe">About Me</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="index.html#blog">BLOG</a>
+              <a class="menu__link menu__link--dark menu__link--footer" href="index.html#blog">Blog</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--active" href="contact.html"
-                >CONTACT</a
-              >
+              <a class="menu__link menu__link--dark menu__link--footer" href="contact.html">Contact</a>
             </li>
             <li class="menu__item">
-              <button class="menu__btn btn btn-outline-dark">
+              <button class="menu__btn menu__btn--dark menu__btn--footer btn btn-dark">
                 HIRE ME
               </button>
             </li>
           </ul>
-          <!-- End Menu -->
+          <!-- End Menu List -->
         </div>
-        <!-- End Wrapper -->
+        <!-- End Menu> -->
       </div>
-      <!-- End Header -->
+      <!-- End Container -->
+    </footer>
+    <!-- End Footer Section -->
+  </div>
+  <!-- End Contact Wrapper -->
+</body>
 
-      <!-- Start Form -->
-      <div class="form-wrapper container">
-        <form onsubmit="thankYouMsg(event.preventDefault())">
-          <!-- Start Thank You Message (Hidden by default) -->
-          <div id="submitSuccess" class="thank-you-msg">
-            <h1 class="uppercase">Thank You!</h1>
-            <p class="uppercase">Your submission has been sent!</p>
-          </div>
-          <!-- End Thank You Message -->
-
-          <!-- Start Main Contact Form -->
-          <div id="contactForm" class="form">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label class="form__label" for="firstName">First Name</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  class="form__input form-control"
-                  required
-                />
-              </div>
-              <div class="form-group col-md-6">
-                <label class="form__label" for="lastName">Last Name</label>
-                <input
-                  type="text"
-                  id="lastName"
-                  class="form__input form-control"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="form__label" for="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                class="form__input form-control"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label class="form__label" for="comments">Comments</label>
-              <textarea
-                name="comments"
-                id="comments"
-                class="form__input form-control"
-                rows="10"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              id="submitBtn"
-              class="form__submit btn btn-outline-dark"
-              disabled
-            >
-              Submit
-            </button>
-          </div>
-          <!-- End Main Contact Form -->
-        </form>
-      </div>
-      <!-- End Wrapper -->
-
-      <!-- Start Footer Section -->
-      <footer class="footer">
-        <div class="footer-wrapper container">
-          <!-- Start Footer Content (Copyright and Social Media Icons) -->
-          <div class="footer-content">
-            <p class="footer-content__copyright">
-              &copy; 2018 UI43 - Free Templates
-            </p>
-            <!-- Start Social Media Icons List -->
-            <ul class="footer-content__social-media-list">
-              <li class="footer-content__icon">
-                <i class="fab fa-behance"></i>
-              </li>
-              <li class="footer-content__icon">
-                <i class="fab fa-dribbble"></i>
-              </li>
-              <li class="footer-content__icon">
-                <i class="fab fa-linkedin-in"></i>
-              </li>
-              <li class="footer-content__icon">
-                <i class="fab fa-facebook-f"></i>
-              </li>
-              <li class="footer-content__icon">
-                <i class="fab fa-instagram"></i>
-              </li>
-              <li class="footer-content__icon">
-                <i class="fab fa-twitter"></i>
-              </li>
-            </ul>
-            <!-- End Social Media Icons List -->
-          </div>
-          <!-- End Footer Content -->
-
-          <!-- Start Footer Menu -->
-          <div class="menu">
-            <!-- Start Menu List -->
-            <ul class="menu__list menu__list--footer">
-              <li class="menu__item">
-                <a
-                  class="menu__link menu__link--dark menu__link--footer"
-                  href="#"
-                  >Work</a
-                >
-              </li>
-              <li class="menu__item">
-                <a
-                  class="menu__link menu__link--dark menu__link--footer"
-                  href="#aboutMe"
-                  >About Me</a
-                >
-              </li>
-              <li class="menu__item">
-                <a
-                  class="menu__link menu__link--dark menu__link--footer"
-                  href="#readMe"
-                  >Blog</a
-                >
-              </li>
-              <li class="menu__item">
-                <a
-                  class="menu__link menu__link--dark menu__link--footer"
-                  href="#"
-                  >Contact</a
-                >
-              </li>
-              <li class="menu__item">
-                <button
-                  class="menu__btn menu__btn--dark menu__btn--footer btn btn-dark"
-                >
-                  HIRE ME
-                </button>
-              </li>
-            </ul>
-            <!-- End Menu List -->
-          </div>
-          <!-- End Menu> -->
-        </div>
-        <!-- End Wrapper -->
-      </footer>
-      <!-- End Footer Section -->
-    </div>
-    <!-- End Contact Wrapper -->
-  </body>
 </html>
 
 <script>
@@ -219,6 +188,7 @@
   const comments = document.getElementById("comments");
   const submitBtn = document.getElementById("submitBtn");
 
+  // Add Event Listeners to all required inputs, validate form every time form is considered valid
   firstName.addEventListener("input", function (event) {
     validateForm();
   });
@@ -231,6 +201,7 @@
     validateForm();
   });
 
+  // Function validateForm checks inputs to see if they are valid and toggles submit button
   function validateForm() {
     if (
       firstName.checkValidity() &&
@@ -242,6 +213,8 @@
       submitBtn.disabled = true;
     }
   }
+
+  // Function thankYouMsg displays validated input in console and shows the Thank You Message
   function thankYouMsg() {
     console.log("Firstname: {{" + firstName.value + "}}");
     console.log("Lastname: {{" + lastName.value + "}}");
